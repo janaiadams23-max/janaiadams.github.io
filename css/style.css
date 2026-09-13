@@ -1,0 +1,581 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,600;0,700;1,300;1,600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: #b98d86;
+  color: #000;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Fixed-width frame that mirrors the Figma canvas (1280px) exactly */
+.figma-frame {
+  position: relative;
+  width: 1280px;
+  margin: 0 auto;
+  background: #d7aca5;
+  overflow: hidden;
+}
+
+/* ---------- Header ---------- */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1280px;
+  height: 104px;
+  background: #fbeded;
+  z-index: 10;
+}
+
+.header .site-title {
+  position: absolute;
+  left: 640px;
+  top: 58px;
+  transform: translateX(-50%);
+  font-weight: 600;
+  font-style: italic;
+  font-size: 40px;
+  line-height: 28px;
+  white-space: nowrap;
+  color: #000;
+}
+
+.header .nav {
+  position: absolute;
+  left: 897px;
+  top: 58px;
+  display: flex;
+  gap: 74px;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000;
+  white-space: nowrap;
+}
+
+.header .nav a:hover {
+  text-decoration: underline;
+}
+
+.resume-btn {
+  position: absolute;
+  left: 21px;
+  top: 54px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 4px 10px;
+  background: #116573;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 28px;
+  white-space: nowrap;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.resume-btn img {
+  width: 14px;
+  height: 14px;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  position: absolute;
+  left: 0;
+  width: 1280px;
+  height: 224px;
+  background: #116573;
+  color: #fff;
+}
+
+.footer .contact-heading {
+  position: absolute;
+  left: 124px;
+  top: 40px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  white-space: nowrap;
+}
+
+.footer .contact-lines {
+  position: absolute;
+  left: 124px;
+  top: 70px;
+  width: 322px;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.footer .contact-lines p {
+  margin: 0;
+}
+
+.footer .contact-lines .resume-line {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer .contact-lines .resume-line:hover {
+  text-decoration: underline;
+}
+
+.linkedin-link,
+.email-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.linkedin-link:hover,
+.email-link:hover {
+  text-decoration: underline;
+}
+
+.footer .contact-lines .resume-line img {
+  width: 14px;
+  height: 14px;
+}
+
+.footer .location {
+  position: absolute;
+  left: 124px;
+  top: 155px;
+  width: 273px;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.footer .copyright {
+  position: absolute;
+  left: 1029px;
+  top: 156px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+/* ---------- Homepage ---------- */
+.page-home {
+  height: 1548px;
+}
+
+.page-home .footer {
+  top: 1324px;
+}
+
+.intro-block {
+  position: absolute;
+  left: 210px;
+  top: 184px;
+  width: 860px;
+  height: 325px;
+  background: #fbeded;
+  border-radius: 8px;
+  box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.intro-block .photo {
+  position: absolute;
+  left: 21px;
+  top: 48px;
+  width: 231px;
+  height: 229px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.intro-block .intro-heading {
+  position: absolute;
+  left: 292px;
+  top: 59px;
+  width: 547px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: left;
+}
+
+.intro-block .intro-bio {
+  position: absolute;
+  left: 292px;
+  top: 110px;
+  width: 547px;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: left;
+  white-space: pre-wrap;
+}
+
+.showcase-heading {
+  position: absolute;
+  left: 639px;
+  top: 592px;
+  transform: translateX(-50%);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  white-space: nowrap;
+}
+
+.project-card {
+  position: absolute;
+  left: 272px;
+  width: 735px;
+  height: 289px;
+  background: #fbeded;
+  border-radius: 8px;
+  box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.project-card:hover,
+.project-card:focus-visible {
+  box-shadow: 2px 6px 10px 0px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.project-card.habitflow-card {
+  top: 643px;
+}
+
+.project-card.i3-card {
+  top: 983px;
+}
+
+.project-card .tag {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  line-height: 28px;
+  white-space: nowrap;
+}
+
+.habitflow-card .tag {
+  left: 504px;
+}
+
+.i3-card .tag {
+  left: 522px;
+}
+
+.habitflow-card .card-title {
+  position: absolute;
+  left: 41px;
+  top: 25px;
+  font-size: 22px;
+  font-weight: 600;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.habitflow-card .card-subtitle {
+  position: absolute;
+  left: 41px;
+  top: 48px;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 300;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.habitflow-card .card-role {
+  position: absolute;
+  left: 41px;
+  top: 76px;
+  font-size: 16px;
+  line-height: 28px;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.habitflow-card .card-time {
+  position: absolute;
+  left: 41px;
+  top: 104px;
+  font-size: 16px;
+  line-height: 28px;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.habitflow-card .card-desc {
+  position: absolute;
+  left: 41px;
+  top: 141px;
+  width: 323px;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.habitflow-card .card-screens {
+  position: absolute;
+  left: 466px;
+  top: 58px;
+  width: 100px;
+  height: 206px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.habitflow-card .card-screens.second {
+  left: 593px;
+}
+
+.habitflow-card .card-screens img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.i3-card .card-title {
+  position: absolute;
+  left: 41px;
+  top: 39px;
+  width: 653px;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: left;
+  line-height: 28px;
+}
+
+.i3-card .card-role {
+  position: absolute;
+  left: 41px;
+  top: 103px;
+  font-size: 16px;
+  line-height: 28px;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.i3-card .card-time {
+  position: absolute;
+  left: 41px;
+  top: 131px;
+  font-size: 16px;
+  line-height: 28px;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.i3-card .card-desc {
+  position: absolute;
+  left: 41px;
+  top: 167px;
+  width: 653px;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: left;
+}
+
+/* ---------- Projects Page ---------- */
+.page-projects {
+  height: 2195px;
+}
+
+.page-projects .footer {
+  top: 1971px;
+}
+
+.page-heading {
+  position: absolute;
+  left: 640px;
+  top: 186px;
+  transform: translateX(-50%);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 28px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.poster-card {
+  position: absolute;
+  left: 105px;
+  width: 1070px;
+  border-radius: 8px;
+  box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.poster-card.habitflow-poster {
+  top: 282px;
+  height: 804px;
+}
+
+.poster-card.habitflow-poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.poster-card.i3-poster {
+  top: 1195px;
+  height: 667px;
+  background: #fbeded;
+}
+
+.poster-card.i3-poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* ---------- About Page ---------- */
+.page-about {
+  height: 1403px;
+}
+
+.page-about .footer {
+  top: 1179px;
+}
+
+.about-block {
+  position: absolute;
+  left: 125px;
+  top: 262px;
+  width: 1050px;
+  height: 873px;
+  background: #fbeded;
+  border-radius: 8px;
+  box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.about-block .me-photo {
+  position: absolute;
+  left: 21px;
+  top: 48px;
+  width: 231px;
+  height: 229px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.about-block .about-heading {
+  position: absolute;
+  left: 316px;
+  top: 48px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  white-space: nowrap;
+}
+
+.about-block .about-bio {
+  position: absolute;
+  left: 316px;
+  top: 97px;
+  width: 713px;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.about-block .about-bio p {
+  margin: 0 0 28px 0;
+}
+
+.about-block .about-bio p:last-child {
+  margin-bottom: 0;
+}
+
+.about-block .contact-heading {
+  position: absolute;
+  left: 21px;
+  top: 302px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  white-space: nowrap;
+}
+
+.about-block .contact-lines {
+  position: absolute;
+  left: 21px;
+  top: 341px;
+  font-size: 16px;
+  line-height: 28px;
+  white-space: nowrap;
+}
+
+.about-block .contact-lines p {
+  margin: 0;
+}
+
+.about-block .figure {
+  position: absolute;
+  text-align: center;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.about-block .figure img {
+  display: block;
+  border-radius: 6px;
+}
+
+.about-block .figure figcaption {
+  margin-top: 6px;
+}
+
+.about-block .figure.monkey {
+  left: 439px;
+  top: 603px;
+  width: 158px;
+}
+
+.about-block .figure.monkey img {
+  width: 158px;
+  height: 155px;
+  object-fit: cover;
+}
+
+.about-block .figure.meme {
+  left: 107px;
+  top: 553px;
+  width: 214px;
+}
+
+.about-block .figure.meme img {
+  width: 214px;
+  height: 216px;
+  object-fit: cover;
+}
+
+.about-block .figure.grad {
+  left: 765px;
+  top: 553px;
+  width: 158px;
+}
+
+.about-block .figure.grad img {
+  width: 158px;
+  height: 216px;
+  object-fit: cover;
+}
