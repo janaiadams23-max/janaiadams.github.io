@@ -7,24 +7,27 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="figma-frame page-projects">
 
-  <header class="header">
-    <p class="site-title">Janai Adams</p>
+<header class="header">
+  <div class="header-inner">
     <a class="resume-btn" href="assets/Overall%20Resume%20copy.pdf" target="_blank" rel="noopener">
       Resume
       <img src="assets/resume-icon.svg" alt="">
     </a>
+    <p class="site-title">Janai Adams</p>
     <nav class="nav">
       <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
+      <a href="projects.html" class="active">Projects</a>
       <a href="about.html">About</a>
     </nav>
-  </header>
+  </div>
+</header>
+
+<main class="page-content page-projects">
 
   <p class="page-heading">Projects</p>
 
-  <figure id="habitflow-poster" class="poster-card habitflow-poster">
+  <figure id="habitflow-poster" class="poster-card">
     <img src="assets/habitflow-poster.png" alt="HabitFlow research poster">
   </figure>
 
@@ -32,17 +35,22 @@
     <img src="assets/i3-poster.png" alt="iConference 2023 research poster">
   </figure>
 
-  <footer class="footer">
-    <p class="contact-heading">Contact</p>
-    <div class="contact-lines">
-      <p><a class="email-link" href="mailto:janaiadams23@gmail.com">janaiadams23@gmail.com</a></p>
-      <p><a class="linkedin-link" href="https://www.linkedin.com/in/janaiadams/" target="_blank" rel="noopener">linkedin.com/in/janaiadams/</a></p>
-      <p><a class="resume-line" href="assets/Overall%20Resume%20copy.pdf" target="_blank" rel="noopener">Resume <img src="assets/external-link-icon.svg" alt=""></a></p>
-    </div>
-    <p class="location">Based in Metro Detroit/Ann Arbor, MI</p>
-    <p class="copyright">© 2026 Janai Adams</p>
-  </footer>
+</main>
 
-</div>
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-contact">
+      <p class="contact-heading">Contact</p>
+      <div class="contact-lines">
+        <p><a class="email-link" href="mailto:janaiadams23@gmail.com">janaiadams23@gmail.com</a></p>
+        <p><a class="linkedin-link" href="https://www.linkedin.com/in/janaiadams/" target="_blank" rel="noopener">linkedin.com/in/janaiadams/</a></p>
+        <p><a class="resume-line" href="assets/Overall%20Resume%20copy.pdf" target="_blank" rel="noopener">Resume <img src="assets/external-link-icon.svg" alt=""></a></p>
+      </div>
+      <p class="location">Based in Metro Detroit/Ann Arbor, MI</p>
+    </div>
+    <p class="copyright">© 2026 Janai Adams</p>
+  </div>
+</footer>
+
 </body>
 </html>

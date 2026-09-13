@@ -7,41 +7,52 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="figma-frame page-home">
 
-  <header class="header">
-    <p class="site-title">Janai Adams</p>
+<header class="header">
+  <div class="header-inner">
     <a class="resume-btn" href="assets/Overall%20Resume%20copy.pdf" target="_blank" rel="noopener">
       Resume
       <img src="assets/resume-icon.svg" alt="">
     </a>
+    <p class="site-title">Janai Adams</p>
     <nav class="nav">
-      <a href="index.html">Home</a>
+      <a href="index.html" class="active">Home</a>
       <a href="projects.html">Projects</a>
       <a href="about.html">About</a>
     </nav>
-  </header>
+  </div>
+</header>
+
+<main class="page-content page-home">
 
   <section class="intro-block">
     <img class="photo" src="assets/profile-photo.jpg" alt="Janai Adams">
-    <p class="intro-heading">Janai Adams | UX Researcher &amp; Designer</p>
-    <p class="intro-bio">Hi everyone! My name is Janai Adams, I am a mixed-methods UX Researcher and Designer passionate about building and improving tools that simplify users' workflows and keep complex systems running efficiently.  I am especially drawn to health informatics, where thoughtful UX can transform how consumers understand and manage their health while helping providers streamline their workflows.</p>
+    <div class="intro-text">
+      <p class="intro-heading">Janai Adams | UX Researcher &amp; Designer</p>
+      <p class="intro-bio">Hi everyone! My name is Janai Adams, I am a mixed-methods UX Researcher and Designer passionate about building and improving tools that simplify users' workflows and keep complex systems running efficiently.  I am especially drawn to health informatics, where thoughtful UX can transform how consumers understand and manage their health while helping providers streamline their workflows.</p>
+    </div>
   </section>
 
   <p class="showcase-heading">Project Showcase</p>
 
   <a class="project-card habitflow-card" href="projects.html#habitflow-poster">
     <p class="tag">[Mixed-Methods, Consumer Health]</p>
-    <p class="card-title">HabitFlow</p>
-    <p class="card-subtitle">Reach a flow state with habit formation</p>
-    <p class="card-role">UX Researcher &amp; Designer</p>
-    <p class="card-time">Jan 2026 - Apr 2026</p>
-    <p class="card-desc">A science-backed habit-building app that uses social accountability and personalized motivation to help users reach sustainable goals.</p>
-    <div class="card-screens">
-      <img src="assets/habitflow-screen-1.png" alt="HabitFlow app screen 1">
-    </div>
-    <div class="card-screens second">
-      <img src="assets/habitflow-screen-2.png" alt="HabitFlow app screen 2">
+    <div class="card-body">
+      <div class="card-text">
+        <p class="card-title">HabitFlow</p>
+        <p class="card-subtitle">Reach a flow state with habit formation</p>
+        <p class="card-role">UX Researcher &amp; Designer</p>
+        <p class="card-time">Jan 2026 - Apr 2026</p>
+        <p class="card-desc">A science-backed habit-building app that uses social accountability and personalized motivation to help users reach sustainable goals.</p>
+      </div>
+      <div class="card-screens-group">
+        <div class="card-screens">
+          <img src="assets/habitflow-screen-1.png" alt="HabitFlow app screen 1">
+        </div>
+        <div class="card-screens">
+          <img src="assets/habitflow-screen-2.png" alt="HabitFlow app screen 2">
+        </div>
+      </div>
     </div>
   </a>
 
@@ -53,17 +64,22 @@
     <p class="card-desc">An exploration of how music functions as a form of data people manage after a breakup — synthesized from 324+ articles into three core research themes, published as a poster at iConference 2023.</p>
   </a>
 
-  <footer class="footer">
-    <p class="contact-heading">Contact</p>
-    <div class="contact-lines">
-      <p><a class="email-link" href="mailto:janaiadams23@gmail.com">janaiadams23@gmail.com</a></p>
-      <p><a class="linkedin-link" href="https://www.linkedin.com/in/janaiadams/" target="_blank" rel="noopener">linkedin.com/in/janaiadams/</a></p>
-      <p><a class="resume-line" href="assets/Overall%20Resume%20copy.pdf" target="_blank" rel="noopener">Resume <img src="assets/external-link-icon.svg" alt=""></a></p>
-    </div>
-    <p class="location">Based in Metro Detroit/Ann Arbor, MI</p>
-    <p class="copyright">© 2026 Janai Adams</p>
-  </footer>
+</main>
 
-</div>
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-contact">
+      <p class="contact-heading">Contact</p>
+      <div class="contact-lines">
+        <p><a class="email-link" href="mailto:janaiadams23@gmail.com">janaiadams23@gmail.com</a></p>
+        <p><a class="linkedin-link" href="https://www.linkedin.com/in/janaiadams/" target="_blank" rel="noopener">linkedin.com/in/janaiadams/</a></p>
+        <p><a class="resume-line" href="assets/Overall%20Resume%20copy.pdf" target="_blank" rel="noopener">Resume <img src="assets/external-link-icon.svg" alt=""></a></p>
+      </div>
+      <p class="location">Based in Metro Detroit/Ann Arbor, MI</p>
+    </div>
+    <p class="copyright">© 2026 Janai Adams</p>
+  </div>
+</footer>
+
 </body>
 </html>
