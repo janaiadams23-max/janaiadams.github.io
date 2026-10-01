@@ -207,14 +207,27 @@ img {
 }
 
 /* ---------- Homepage ---------- */
+.page-home {
+  padding-top: 0;
+}
+
 .intro-block {
+  background: #fbeded;
+  border-top: 1.25px solid #000;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+.intro-block-inner {
   display: flex;
   gap: clamp(20px, 4vw, 40px);
   flex-wrap: wrap;
-  padding: clamp(20px, 4vw, 32px);
-  background: #fbeded;
-  border-radius: 8px;
-  box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: clamp(32px, 5vw, 44px) clamp(16px, 4vw, 40px);
 }
 
 .intro-block .photo {
@@ -225,29 +238,45 @@ img {
   object-fit: cover;
   border-radius: 6px;
   margin: 0 auto;
+  margin-left: 90px;
 }
 
 .intro-text {
   flex: 1 1 320px;
+  text-align: center;
 }
 
 .intro-heading {
   font-size: clamp(20px, 2.5vw, 24px);
   font-weight: 600;
   line-height: 1.4;
-  margin-bottom: 12px;
+  margin: 0 auto 12px;
+  max-width: 440px;
+  width: fit-content;
 }
 
 .intro-bio {
   font-size: 16px;
   line-height: 1.7;
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+.showcase-band {
+  background: #fbeded;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  padding: clamp(16px, 3vw, 24px) 0;
+  margin-top: 24px;
+  margin-bottom: clamp(20px, 4vw, 32px);
 }
 
 .showcase-heading {
   text-align: center;
-  font-size: clamp(20px, 3vw, 24px);
+  font-size: clamp(20px, 3vw, 28px);
   font-weight: 600;
-  margin: clamp(32px, 6vw, 56px) 0 clamp(20px, 4vw, 32px);
+  margin: 0;
 }
 
 .project-card {
@@ -316,6 +345,13 @@ img {
   margin-top: 4px;
   margin-bottom: 12px;
   line-height: 1.4;
+}
+
+.i3-card .card-title,
+.i3-card .card-role,
+.i3-card .card-time,
+.i3-card .card-desc {
+  text-align: center;
 }
 
 .card-screens-group {
