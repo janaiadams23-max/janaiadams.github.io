@@ -467,6 +467,11 @@ img {
   font-weight: 600;
 }
 
+.case-study-card .case-lead {
+  font-size: 18px;
+  font-weight: 600;
+}
+
 .case-study-link {
   color: #116573;
   text-decoration: none;
